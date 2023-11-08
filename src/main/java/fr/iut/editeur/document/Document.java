@@ -30,10 +30,17 @@ public class Document {
         String toUpper = texte.substring(start, end).toUpperCase();
         remplacer(start, end, toUpper);
     }
+    public void effacer(int start, int end) {
+        remplacer(start, end, ".");
+    }
 
 
     @Override
     public String toString() {
         return this.texte;
+    }
+
+    public void clear() {
+        texte = "";
     }
 }
