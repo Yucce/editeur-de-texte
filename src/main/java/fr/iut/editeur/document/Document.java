@@ -43,4 +43,8 @@ public class Document {
     public void clear() {
         texte = "";
     }
+
+    public void inserer(int start, String remplacement){
+        remplacer(start+1,start+1,remplacement);
+    }
 }
