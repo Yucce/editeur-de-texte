@@ -20,4 +20,9 @@ public class CommandeRemplacer extends CommandeDocument{
         this.document.remplacer(debut,fin,texte);
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Cette commande permet de remplacer la partie du texte selectionné par un autre texte");
+    }
 }

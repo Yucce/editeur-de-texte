@@ -20,4 +20,8 @@ public class CommandeAjouter extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Cette commande permet d'ajouter du texte au document");
+    }
 }

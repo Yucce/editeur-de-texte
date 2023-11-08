@@ -19,4 +19,8 @@ public class CommandeEffacer extends CommandeDocument{
         this.document.effacer(debut,fin);
         super.executer();
     }
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Cette commande permet d'effacer les contenu du document entre le debt et la fin donné en paramètre");
+    }
 }

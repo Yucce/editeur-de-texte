@@ -18,4 +18,8 @@ public class CommandeInserer extends CommandeDocument{
         this.document.inserer(start,texte);
         super.executer();
     }
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Cette commande permet d'inserer du texte à l'endroit donné en paramètre");
+    }
 }
