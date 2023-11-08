@@ -31,7 +31,7 @@ public class Document {
         remplacer(start, end, toUpper);
     }
     public void effacer(int start, int end) {
-        remplacer(start, end, ".");
+        remplacer(start, end, "");
     }
 
 
