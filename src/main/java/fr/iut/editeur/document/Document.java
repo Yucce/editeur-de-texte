@@ -45,6 +45,8 @@ public class Document {
     }
 
     public void inserer(int start, String remplacement){
-        remplacer(start+1,start+1,remplacement);
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(start);
+        texte = leftPart + remplacement + rightPart;
     }
 }
